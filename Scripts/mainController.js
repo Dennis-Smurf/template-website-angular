@@ -1,6 +1,7 @@
 ﻿'use strict';
-define(['mainApp'], function (mainApp) {
-	return mainApp.controller('mainController', ['$scope', function mainControl($scope) {
+
+define(function () {
+	return function mainController($scope) {
 		console.log("mainController gestart");
-	}]);
-});
+	};
+});	

@@ -25,10 +25,8 @@ if (!window.JSON) {
 	require(['bower_components/json2/json2']);
 }
 
-require(['angular', 'mainApp', 'jquery', 'assemblyInfo', 'mainController', 'AssemblyInfoDirective', 'bootstrap'], function (angular, mainApp, $, assemblyInfo) {
+require(['angular', 'jquery', 'mainModule', 'bootstrap'], function (angular, $) {
 	$(document).ready(function () {
-		console.log("version: " + assemblyInfo.version + " by " + assemblyInfo.writer);
 		angular.bootstrap(document, ['mainModule']);
-		console.log("mainModule bootstrapped");
 		});
 });

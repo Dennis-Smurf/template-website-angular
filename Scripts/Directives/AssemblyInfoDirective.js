@@ -4,7 +4,7 @@ define(['AssemblyInfo'], function (assemblyInfo) {
 	console.log('version '+assemblyInfo.version+" by "+assemblyInfo.writer);
 	return function assemblyInfoDirective() {
 		return {
-			restrict: 'C,A',
+			restrict: 'CA',
 			templateUrl: 'partials/AssemblyInfo.html',
 			replace: true,
 			controller: function ($scope) {

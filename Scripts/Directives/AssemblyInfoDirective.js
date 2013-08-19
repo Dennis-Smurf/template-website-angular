@@ -1,8 +1,8 @@
 ﻿'use strict'
 
-define(['AssemblyInfo'], function (assemblyInfo) {
-	console.log('version '+assemblyInfo.version+" by "+assemblyInfo.writer);
-	return function assemblyInfoDirective() {
+define( function () {
+	return function assemblyInfoDirective(assemblyInfo) {
+		console.log("version " + assemblyInfo.version + " by " + assemblyInfo.writer);
 		return {
 			restrict: 'CA',
 			templateUrl: 'partials/AssemblyInfo.html',
